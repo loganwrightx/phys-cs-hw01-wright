@@ -1,10 +1,7 @@
 import time
-import matplotlib
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
-
-matplotlib.use("TkAgg")
 
 from gravitational_force import direct_nbody_force
 
@@ -34,7 +31,7 @@ plt.xlabel("Log(N)")
 plt.ylabel("Log(t)")
 plt.title(f"Log-log plot of time complexity of grav. model")
 plt.plot(np.log2(N), np.log2(time_complexities))
-plt.show()
+plt.savefig("problem1.png")
 
 print("Curve fit results:")
 print(f"\ty = {params[0]:.3f} x + {params[1]}")
