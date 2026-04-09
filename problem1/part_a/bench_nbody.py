@@ -6,7 +6,7 @@ import numpy as np
 from gravitational_force import direct_nbody_force
 
 # Initialize arrays
-N = np.array([100, 200, 400, 800, 1600])
+N = np.array([100, 200, 400, 800, 1200])
 time_complexities = np.zeros(5)
 
 # Iterate over n's
